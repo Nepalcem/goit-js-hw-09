@@ -22,8 +22,13 @@ img {
   justify-content: center;
   gap: 10px;
 }
+.timer .field:not(:last-child)::after {
+  content: ':';
+  left: 19px;
+  position: relative;
+}
 .field {
-  border: 1px solid chocolate;
+  border: 3px solid chocolate;
   border-radius: 10px;
   padding: 10px;
 }
