@@ -12,7 +12,7 @@ function formHandler(e) {
   const promiseStep = Number(step.value);
   const promisesAmount = Number(amount.value);
   let delayvalue = firstDelay;
-  for (i = 1; i <= promisesAmount; i += 1) {
+  for (let i = 1; i <= promisesAmount; i += 1) {
     createPromise(i, delayvalue)
       .then(value => Notiflix.Notify.success(value, { timeout: 10000 }))
       .catch(error => Notiflix.Notify.failure(error, { timeout: 10000 }));
